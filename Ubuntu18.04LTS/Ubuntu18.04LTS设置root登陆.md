@@ -1,4 +1,4 @@
-# Ubuntu18.04LTS设置root登陆
+# 1 Ubuntu18.04LTS设置root登陆
 
 ## 1 首先获得临时的root权限
 ```
@@ -47,3 +47,11 @@ gedit /root/.profile
 reboot
 ```
 重启完成后，登陆界面选择“未列出”，之后用户名输入root进行登陆即可
+
+# 2 Ubuntu18.04LTS无WIFI适配器
+
+## 1 打开软件可更新
+单击一个九宫个样式的图标，在弹出的界面中可以找到软件和更新应用
+
+## 2 Broadcom Limited: BCM43142 802.11b/g/n
+切换到附加驱动选项卡，将Broadcom Limited: BCM43142 802.11b/g/n设置为使用Broadcom 802.11 Linux STA w无线驱动源码 来自bcmwl-kernel-source(专有)
