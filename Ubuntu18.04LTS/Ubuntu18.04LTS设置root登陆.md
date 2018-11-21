@@ -55,3 +55,23 @@ reboot
 
 ## 2 Broadcom Limited: BCM43142 802.11b/g/n
 切换到附加驱动选项卡，将Broadcom Limited: BCM43142 802.11b/g/n设置为使用Broadcom 802.11 Linux STA w无线驱动源码 来自bcmwl-kernel-source(专有)
+
+# 3 创建QtCreator桌面快捷方式
+## 1 创建QtCreator.desktop文件
+进入/usr/share/applications目录编辑一desktop文档
+```
+sudo vim /usr/share/applications/QtCreator.desktop
+```
+在QtCreator.desktop文件中添加如下内容
+```
+1 [Desktop Entry]
+2 Type=Application
+3 Version=0.9.4
+4 Name=QtCreator
+5 Comment=Run Qt Creator #鼠标放上去时的文字提示
+6 Icon=/home/yan/qtsdk-2009.03/share/pixmaps/qtcreator_logo_48.png #要显示的图标绝对路径
+7 Exec=/home/yan/qtsdk-2009.03/bin/qtcreator #启动程序
+8 Path=/home/yan/qtsdk-2009.03/bin
+9 Terminal=false
+10 Categories=GNOME;GTK;System; #应用程序在菜单项中的分类，在我的系统中在 应用程序-》系统工具下
+```
